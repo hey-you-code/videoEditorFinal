@@ -1,0 +1,60 @@
+.uploadPhotos {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    margin-top: 20px;
+    /* background-color: black; */
+}
+
+.uploadPhoto__icon {
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 20px;
+    align-items: center;
+    color: white;
+    background-color: black;
+    padding: 10px 12px;
+    border-radius: 30px;
+}
+
+.uploadPhoto__icon:hover {
+    color: black;
+    background-color: white;   
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    transform: scale(1.09);
+}
+
+.selected__file {
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 80vw;
+    justify-content: space-around;
+    margin-top: 20px;
+    overflow: scroll;
+    margin-left:  20px;
+    /* background-color: black; */
+    flex: 1;
+
+}
+.selected__file::-webkit-scrollbar {
+    display: none;
+}
+
+.selected__image  {
+    margin-top: 10px;
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+    margin-right: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* background-color: white;
+    padding: 10px; */
+}
+

@@ -1,0 +1,322 @@
+[
+    {
+        "template_id": 1,
+        "representative_media": {
+            "type": "image",
+            "src": "https://images.unsplash.com/photo-1662447477833-6408b8f5faf6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80"
+        },
+        "params": {
+            "text_cta": {
+                "text": "ocean example"
+            },
+            "text_heading": {
+                "text": "Thats a nice pic"
+            },
+            "background_media": {
+                "type": "image",
+                "src": "https://images.unsplash.com/photo-1662447477833-6408b8f5faf6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80"
+            },
+            "image_brand": {
+                "src": "https://images.unsplash.com/photo-1662401176469-b546709da043?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+            }
+        }
+    },
+    {
+        "template_id": 2,
+        "representative_media": {
+            "type": "image",
+            "src": "https://i.vimeocdn.com/video/1279995075-5fb1b66196247f167b1a25689c3513ce1b8ddd5a7025b0b09?mw=900&mh=1600&q=70"
+        },
+        "params": {
+            "text_cta": {
+                "text": "Food serving"
+            },
+            "text_subtitle": {
+                "text": "That's a nice dish."
+            },
+            "background_media": {
+                "type": "video",
+                "src": "https://vod-progressive.akamaized.net/exp=1662472769~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2442%2F25%2F637211366%2F2919455616.mp4~hmac=346506c24fa3cfa7b1833c4478d8ce0839e7ce59119443a6f3ee4fb49e4c9bc0/vimeo-prod-skyfire-std-us/01/2442/25/637211366/2919455616.mp4"
+            }
+        }
+    },
+    {
+        "template_id": 3,
+        "representative_media": {
+            "type": "image",
+            "src": "https://images.unsplash.com/photo-1620926531357-280afe2368e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
+        },
+        "params": {
+            "text_cta": {
+                "text": "Drone photo"
+            },
+            "background_media": {
+                "type": "image",
+                "src": "https://images.unsplash.com/photo-1620926531357-280afe2368e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
+            }
+        }
+    },
+    {
+        "template_id": 4,
+        "representative_media": {
+            "type": "image",
+            "src": "https://images.unsplash.com/photo-1662447477833-6408b8f5faf6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80"
+        },
+        "params": {
+            "text_cta": {
+                "text": "ocean example"
+            },
+            "text_heading": {
+                "text": "Thats a nice pic"
+            },
+            "background_media": {
+                "type": "image",
+                "src": "https://images.unsplash.com/photo-1662447477833-6408b8f5faf6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80"
+            },
+            "image_brand": {
+                "src": "https://images.unsplash.com/photo-1662401176469-b546709da043?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+            }
+        }
+    },
+    {
+        "template_id": 5,
+        "representative_media": {
+            "type": "image",
+            "src": "https://i.vimeocdn.com/video/1279995075-5fb1b66196247f167b1a25689c3513ce1b8ddd5a7025b0b09?mw=900&mh=1600&q=70"
+        },
+        "params": {
+            "text_cta": {
+                "text": "Food serving"
+            },
+            "text_subtitle": {
+                "text": "That's a nice dish."
+            },
+            "background_media": {
+                "type": "video",
+                "src": "https://vod-progressive.akamaized.net/exp=1662472769~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2442%2F25%2F637211366%2F2919455616.mp4~hmac=346506c24fa3cfa7b1833c4478d8ce0839e7ce59119443a6f3ee4fb49e4c9bc0/vimeo-prod-skyfire-std-us/01/2442/25/637211366/2919455616.mp4"
+            }
+        }
+    },
+    {
+        "template_id": 6,
+        "representative_media": {
+            "type": "image",
+            "src": "https://images.unsplash.com/photo-1620926531357-280afe2368e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
+        },
+        "params": {
+            "text_cta": {
+                "text": "Drone photo"
+            },
+            "background_media": {
+                "type": "image",
+                "src": "https://images.unsplash.com/photo-1620926531357-280afe2368e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
+            }
+        }
+    },
+    {
+        "template_id": 7,
+        "representative_media": {
+            "type": "image",
+            "src": "https://images.unsplash.com/photo-1662447477833-6408b8f5faf6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80"
+        },
+        "params": {
+            "text_cta": {
+                "text": "ocean example"
+            },
+            "text_heading": {
+                "text": "Thats a nice pic"
+            },
+            "background_media": {
+                "type": "image",
+                "src": "https://images.unsplash.com/photo-1662447477833-6408b8f5faf6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80"
+            },
+            "image_brand": {
+                "src": "https://images.unsplash.com/photo-1662401176469-b546709da043?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+            }
+        }
+    },
+    {
+        "template_id": 8,
+        "representative_media": {
+            "type": "image",
+            "src": "https://i.vimeocdn.com/video/1279995075-5fb1b66196247f167b1a25689c3513ce1b8ddd5a7025b0b09?mw=900&mh=1600&q=70"
+        },
+        "params": {
+            "text_cta": {
+                "text": "Food serving"
+            },
+            "text_subtitle": {
+                "text": "That's a nice dish."
+            },
+            "background_media": {
+                "type": "video",
+                "src": "https://vod-progressive.akamaized.net/exp=1662472769~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2442%2F25%2F637211366%2F2919455616.mp4~hmac=346506c24fa3cfa7b1833c4478d8ce0839e7ce59119443a6f3ee4fb49e4c9bc0/vimeo-prod-skyfire-std-us/01/2442/25/637211366/2919455616.mp4"
+            }
+        }
+    },
+    {
+        "template_id": 9,
+        "representative_media": {
+            "type": "image",
+            "src": "https://images.unsplash.com/photo-1620926531357-280afe2368e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
+        },
+        "params": {
+            "text_cta": {
+                "text": "Drone photo"
+            },
+            "background_media": {
+                "type": "image",
+                "src": "https://images.unsplash.com/photo-1620926531357-280afe2368e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
+            }
+        }
+    },
+    {
+        "template_id": 10,
+        "representative_media": {
+            "type": "image",
+            "src": "https://images.unsplash.com/photo-1662447477833-6408b8f5faf6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80"
+        },
+        "params": {
+            "text_cta": {
+                "text": "ocean example"
+            },
+            "text_heading": {
+                "text": "Thats a nice pic"
+            },
+            "background_media": {
+                "type": "image",
+                "src": "https://images.unsplash.com/photo-1662447477833-6408b8f5faf6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80"
+            },
+            "image_brand": {
+                "src": "https://images.unsplash.com/photo-1662401176469-b546709da043?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+            }
+        }
+    },
+    {
+        "template_id": 11,
+        "representative_media": {
+            "type": "image",
+            "src": "https://i.vimeocdn.com/video/1279995075-5fb1b66196247f167b1a25689c3513ce1b8ddd5a7025b0b09?mw=900&mh=1600&q=70"
+        },
+        "params": {
+            "text_cta": {
+                "text": "Food serving"
+            },
+            "text_subtitle": {
+                "text": "That's a nice dish."
+            },
+            "background_media": {
+                "type": "video",
+                "src": "https://vod-progressive.akamaized.net/exp=1662472769~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2442%2F25%2F637211366%2F2919455616.mp4~hmac=346506c24fa3cfa7b1833c4478d8ce0839e7ce59119443a6f3ee4fb49e4c9bc0/vimeo-prod-skyfire-std-us/01/2442/25/637211366/2919455616.mp4"
+            }
+        }
+    },
+    {
+        "template_id": 12,
+        "representative_media": {
+            "type": "image",
+            "src": "https://images.unsplash.com/photo-1620926531357-280afe2368e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
+        },
+        "params": {
+            "text_cta": {
+                "text": "Drone photo"
+            },
+            "background_media": {
+                "type": "image",
+                "src": "https://images.unsplash.com/photo-1620926531357-280afe2368e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
+            }
+        }
+    },
+    {
+        "template_id": 13,
+        "representative_media": {
+            "type": "image",
+            "src": "https://i.vimeocdn.com/video/1279995075-5fb1b66196247f167b1a25689c3513ce1b8ddd5a7025b0b09?mw=900&mh=1600&q=70"
+        },
+        "params": {
+            "text_cta": {
+                "text": "Food serving"
+            },
+            "text_subtitle": {
+                "text": "That's a nice dish."
+            },
+            "background_media": {
+                "type": "video",
+                "src": "https://vod-progressive.akamaized.net/exp=1662472769~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2442%2F25%2F637211366%2F2919455616.mp4~hmac=346506c24fa3cfa7b1833c4478d8ce0839e7ce59119443a6f3ee4fb49e4c9bc0/vimeo-prod-skyfire-std-us/01/2442/25/637211366/2919455616.mp4"
+            }
+        }
+    },
+    {
+        "template_id": 14,
+        "representative_media": {
+            "type": "image",
+            "src": "https://images.unsplash.com/photo-1620926531357-280afe2368e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
+        },
+        "params": {
+            "text_cta": {
+                "text": "Drone photo"
+            },
+            "background_media": {
+                "type": "image",
+                "src": "https://images.unsplash.com/photo-1620926531357-280afe2368e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
+            }
+        }
+    },
+    {
+        "template_id": 15,
+        "representative_media": {
+            "type": "image",
+            "src": "https://images.unsplash.com/photo-1662447477833-6408b8f5faf6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80"
+        },
+        "params": {
+            "text_cta": {
+                "text": "ocean example"
+            },
+            "text_heading": {
+                "text": "Thats a nice pic"
+            },
+            "background_media": {
+                "type": "image",
+                "src": "https://images.unsplash.com/photo-1662447477833-6408b8f5faf6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80"
+            },
+            "image_brand": {
+                "src": "https://images.unsplash.com/photo-1662401176469-b546709da043?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+            }
+        }
+    },
+    {
+        "template_id": 16,
+        "representative_media": {
+            "type": "image",
+            "src": "https://i.vimeocdn.com/video/1279995075-5fb1b66196247f167b1a25689c3513ce1b8ddd5a7025b0b09?mw=900&mh=1600&q=70"
+        },
+        "params": {
+            "text_cta": {
+                "text": "Food serving"
+            },
+            "text_subtitle": {
+                "text": "That's a nice dish."
+            },
+            "background_media": {
+                "type": "video",
+                "src": "https://vod-progressive.akamaized.net/exp=1662472769~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2442%2F25%2F637211366%2F2919455616.mp4~hmac=346506c24fa3cfa7b1833c4478d8ce0839e7ce59119443a6f3ee4fb49e4c9bc0/vimeo-prod-skyfire-std-us/01/2442/25/637211366/2919455616.mp4"
+            }
+        }
+    },
+    {
+        "template_id": 17,
+        "representative_media": {
+            "type": "image",
+            "src": "https://images.unsplash.com/photo-1620926531357-280afe2368e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
+        },
+        "params": {
+            "text_cta": {
+                "text": "Drone photo"
+            },
+            "background_media": {
+                "type": "image",
+                "src": "https://images.unsplash.com/photo-1620926531357-280afe2368e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
+            }
+        }
+    }
+]

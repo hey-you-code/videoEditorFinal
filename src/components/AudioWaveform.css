@@ -1,0 +1,165 @@
+.waveform__container {
+    width: 100%;
+    /* max-width: 90vw; */
+    /* background-color: white; */
+  }
+
+button {
+    padding: 10px ;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: #1ED55F;
+    color: white;
+    cursor: pointer;
+    /* margin: 10px; */
+}
+
+#waveform::-webkit-scrollbar {
+    display: none;
+}
+
+.trim {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    color: black;
+    width: 5em;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 0.25em;
+    border: 1px solid white;
+  }
+  
+  /* all the button controls */
+  div.all-controls {
+    margin: 2em auto;
+    max-width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .all-controls .right-container,
+  .all-controls .left-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+  
+  button.controls {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+  
+  /* style for both sliders */
+  .slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: rgba(213, 184, 255, 0.7);
+    border: 1px solid #1D0B22;
+    border-radius: 999px;
+    margin: 0;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    filter: brightness(1.05);
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #1D0B22;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .volume-slide-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* smaller icon for zoom slider */
+  i.zoom-icon {
+    font-size: 0.8em;
+  }
+  
+  /* toggle switch style*/
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 4em;
+    height: 1.2em;
+  }
+  
+  .switch input {
+    display: none;
+  }
+  
+  
+  
+  /* footer style */
+  footer {
+    font-family: inherit;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+  }
+  
+  @media screen and (max-width: 430px) {
+    nav {
+      font-size: 1em;
+    }
+  
+    .upload-audio i.audio-icon {
+      font-size: 4em;
+    }
+  
+    /* all icons */
+    i.material-icons {
+      font-size: 1.5em;
+    }
+  
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    div.all-controls {
+      max-width: 90vw;
+      flex-flow: column nowrap;
+    }
+  
+    .waveform-container {
+      max-width: 90vw;
+    }
+  
+    .all-controls .right-container,
+    .all-controls .left-container {
+      justify-content: space-evenly;
+      width: 100%;
+      margin-top: 1em;
+    }
+  
+    /* smaller icon for zoom slider */
+    i.zoom-icon {
+      font-size: 1em;
+    }}

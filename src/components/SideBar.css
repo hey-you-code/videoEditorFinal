@@ -1,0 +1,100 @@
+.sideBar {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    height: 100vh;
+    transition: width 200ms ease;
+    z-index: 3;
+}
+.sideBar__icons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 5px;
+    color: gray ;
+    font-size: small ; 
+    cursor: pointer;
+    
+}
+
+.sideBar__icons > h2 {
+    margin-left: 4px;
+    color: gray;
+  
+}
+
+.sideBar__left {
+    left: 0;
+    background-color: black;
+    border-top-right-radius: 20px;
+    /* margin-right: 10px; */
+    /* border-right: 0.5px solid black; */
+    /* height: 100vh; */
+}
+
+.sideBar__right {
+    width: 20vw;
+    /* position: relative; */
+    /* height: fit-content; */
+    overflow: scroll;
+   
+    /* padding-left: 5px; */
+    display: grid;
+    grid-template-columns: 10vw 10vw;
+    grid-row-gap: 10px ;
+    margin-bottom: 100px;
+    /* margin-left: 2px; */
+    margin-top: 10px;
+    
+}
+
+.sideBar__right::-webkit-scrollbar {
+    display: none;
+}
+
+.sideBarAudio__right {
+
+    width: 20vw;
+    /* height: 100vh; */
+    overflow: scroll;
+    /* max-width: 30vw; */
+    padding: 2px 5px;
+    margin-bottom: 5px;
+   
+    padding-right: 5px;
+    margin-right: 5px;
+    
+    
+    margin-top: 10px;
+
+}
+
+.sideBarAudio__right::-webkit-scrollbar {
+    display: none;
+}
+
+.sideBarImage__right {
+    width: 20vw;
+    /* height: 100vh; */
+    overflow: scroll;
+    /* max-width: 30vw; */
+    padding-left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border-radius: 20px; */
+    margin-top: 10px;
+    /* margin-bottom: 20px; */
+}
+
+.sideBarImage__right::-webkit-scrollbar {
+    display: none;
+}
+
+.sideBar__clickedIcon {
+    color: white;
+}
+
+.chip::-webkit-scrollbar {
+    display: none;
+}

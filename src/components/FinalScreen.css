@@ -1,0 +1,44 @@
+.finalScreen {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    /* position: absolute; */
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* margin-bottom: 10vh; */
+    /* background-color: black; */
+    margin: 0 20px ;
+}
+
+.video__breakPoints {
+    color: white;
+}
+
+.upper__section {
+    display: flex;
+    width: 100%;
+
+    /* margin-right: 10px; */
+    /* justify-content: center; */
+    padding: 1px 1px ;
+    /* margin-top: 10px; */
+    /* border: 1px solid white; */
+    /* background-color: white; */
+    /* width: fit-content; */
+}
+
+.lower__section {
+    width: 100%;
+    /* background-color: gray; */
+    /* display: flex;
+    justify-content: center; */
+}
+
+.image__template {
+    margin-right: 5px;
+}
+
+.first__template {
+    margin-right: 5px;
+}

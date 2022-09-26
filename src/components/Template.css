@@ -1,0 +1,70 @@
+.template {
+    position: relative;
+    /* cursor: pointer; */
+    
+}
+.template__elements {
+    position: relative;
+    cursor: pointer;
+
+}
+
+.template__elements > img  {
+    /* margin-top: 10px; */
+    /* height: 800px;
+    width: 150px; */
+    object-fit: cover;
+    margin-right: 5px;
+    /* margin-left: 5px; */
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    /* margin-top: 10px; */
+    
+}
+
+.template__elements > video  {
+    /* margin-top: 10px; */
+    /* height: 800px;
+    width: 150px; */
+    object-fit: cover;
+    margin-right: 5px;
+    /* margin-left: 5px; */
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    /* margin-top: 10px; */
+    
+}
+
+
+
+.template__headings {
+    color: white;
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.template__headings > h5 {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* border-radius: 20px; */
+    /* height: 50px; */
+    /* padding: 10px 0px; */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items:center 
+}

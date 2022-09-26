@@ -1,0 +1,84 @@
+.canvas {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    position: fixed;
+    width: 100%;
+    /* display: absolute; */
+    /* justify-content: center; */
+    /* left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: black; */
+    z-index: 0;
+}
+
+.canvas__image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* z-index: 2; */
+    
+    margin-top: 30px;
+    height: 700px;
+    width: 400px;
+    /* background-color: black; */
+    margin: auto;
+    margin-top: 25px;
+    
+}
+.canvas__image >img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    /* z-index: 2; */
+    
+    
+}
+
+
+.canvas__headings {
+    color: white;
+    position: absolute;
+    z-index: 2;
+    /* top: 200px;
+    left: 100px; */
+    margin: auto;
+    /* background-color: black; */
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.heading2 {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* border-radius: 20px; */
+    /* height: 50px; */
+    /* padding: 10px 0px; */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+/* .heading2 > h2 {
+    margin: 10px 0px;
+} */
+
+
+
