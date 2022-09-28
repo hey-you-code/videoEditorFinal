@@ -14,14 +14,14 @@ import { useSelector } from "react-redux";
 import { selectPage } from "../Store/store";
 import UploadPhotos from "./UploadPhotos";
 import FinalScreen from "./FinalScreen";
-import Waveform from "./Waveform"
+import Waveform from "./Waveform";
 import Frame from "./Frame";
 import AudioWaveform from "./AudioWaveform";
 
 function Main() {
   //   console.log("After Clicking: ", isSelect);
   const [isClicked, setIsClicked] = useState(false);
-
+  const [isCreditIconClicked, setIsCreditIconClicked] = useState(false);
   const [isAudioIconClicked, setIsAudioIconClicked] = useState(false);
   const [isBrowseIconClicked, setIsBrowseIconClicked] = useState(false);
   const dispatch = useDispatch();
@@ -55,8 +55,9 @@ function Main() {
       return (
         <>
           <Canvas />
+          
         </>
-      )
+      );
     }
   };
 
@@ -70,6 +71,8 @@ function Main() {
         setIsAudioIconClicked={setIsAudioIconClicked}
         isBrowseIconClicked={isBrowseIconClicked}
         setIsBrowseIconClicked={setIsBrowseIconClicked}
+        isCreditIconClicked={isCreditIconClicked}
+        setIsCreditIconClicked={setIsCreditIconClicked}
       />
       <div className="main__progressBar">
         <div className="progress__bar">

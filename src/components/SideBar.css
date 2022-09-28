@@ -27,6 +27,8 @@
     left: 0;
     background-color: black;
     border-top-right-radius: 20px;
+    padding: 0 10px;
+    /* width: 5vw; */
     /* margin-right: 10px; */
     /* border-right: 0.5px solid black; */
     /* height: 100vh; */
@@ -64,7 +66,7 @@
     padding-right: 5px;
     margin-right: 5px;
     
-    
+    margin-bottom: 100px;
     margin-top: 10px;
 
 }
@@ -79,12 +81,13 @@
     overflow: scroll;
     /* max-width: 30vw; */
     padding-left: 5px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 10vw 10vw;
+    grid-row-gap: 10px ;
     justify-content: space-evenly;
     /* border-radius: 20px; */
     margin-top: 10px;
-    /* margin-bottom: 20px; */
+    margin-bottom: 100px;
 }
 
 .sideBarImage__right::-webkit-scrollbar {
@@ -93,6 +96,12 @@
 
 .sideBar__clickedIcon {
     color: white;
+    
+}
+
+.sideBar__clickedIcon >h2 {
+    color: white;
+    
 }
 
 .chip::-webkit-scrollbar {

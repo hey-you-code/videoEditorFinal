@@ -33,7 +33,16 @@ function Template({ img, id, text_heading, text_cta, video, style, addImg }) {
         } else if (page === 1) {
           dispatch(setSelectedFile({ id: uuid(), url: img }));
         } else if (page === 2) {
-          dispatch(clickedLastTemplate({ id: id, img: img }));
+          dispatch(
+            clickedLastTemplate({
+              id: id,
+              img: img,
+              text_cta: text_cta,
+              text_heading: text_heading,
+              addImg: addImg,
+              video: video,
+            })
+          );
         }
       }}
     >
@@ -56,7 +65,11 @@ function Template({ img, id, text_heading, text_cta, video, style, addImg }) {
             />
           )}
         </div>
-        {img ? <img src={img} alt="" /> : video && <video autoPlay loop src={video} />}
+        {img ? (
+          <img src={img} alt="" />
+        ) : (
+          video && <video autoPlay loop src={video} />
+        )}
         {/* {video && <video src={video} />} */}
       </div>
     </div>

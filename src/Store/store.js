@@ -14,6 +14,7 @@ export const pictureSlice = createSlice({
     selectedFile: [],
     loadedTemplate: 3,
     lastTemplate: null,
+    loadedLastTemplate: 3,
   },
 
   reducers: {
@@ -31,6 +32,9 @@ export const pictureSlice = createSlice({
     },
     clickedLastTemplate: (state, action) => {
       state.lastTemplate = action.payload;
+    },
+    loadLastTemplateMore: (state) => {
+      state.loadedLastTemplate = state.loadedLastTemplate + 3;
     },
   },
 });
@@ -75,6 +79,7 @@ export const {
   setSelectedFile,
   reorderFile,
   loadMore,
+  loadLastTemplateMore,
   clickedLastTemplate,
 } = pictureSlice.actions;
 
@@ -87,6 +92,8 @@ export const selectPicture = (state) => state.picture.picture;
 export const selectedFile = (state) => state.picture.selectedFile;
 
 export const loadedTemplate = (state) => state.picture.loadedTemplate;
+
+export const loadedLastTemplate = (state) => state.picture.loadedLastTemplate;
 
 export const selectPage = (state) => state.page.page;
 

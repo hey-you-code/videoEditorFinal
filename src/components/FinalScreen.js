@@ -51,13 +51,6 @@ function FinalScreen() {
 
   return (
     <div className="finalScreen">
-      {audioDuration}
-      {/* <div className="video__breakPoints">{breakPoints}</div>
-      <div className="video__breakPoints">
-        <h2>BreakPoints Interval</h2>
-        {breakPoints[breakPoints.length - 1] -
-          breakPoints[breakPoints.length - 2]}
-      </div> */}
       <div className="upper__section">
         {/* <SplitPane className="upper__section" split="vertical"> */}
 

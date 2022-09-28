@@ -1,6 +1,12 @@
 import React, { useState, useRef } from "react";
 import { useDispatch } from "react-redux";
-import { clickedTemplate, selectPicture } from "../Store/store";
+import {
+  clickedTemplate,
+  selectLastTemplate,
+  selectPage,
+  selectPicture,
+  clickedLastTemplate,
+} from "../Store/store";
 import "./UpdateTemplate.css";
 
 import "./UpdateTemplate.css";
@@ -16,6 +22,8 @@ function UpdateTemplate() {
   const dispatch = useDispatch();
   const filePickerRef = useRef();
   const picture = useSelector(selectPicture);
+  const page = useSelector(selectPage);
+  const lastTemplate = useSelector(selectLastTemplate);
   const [heading1, setHeading1] = useState("");
   const [heading2, setHeading2] = useState("");
 
@@ -41,7 +49,11 @@ function UpdateTemplate() {
   // console.log("file type", url.type);
   return (
     <div className="updateTemplate">
-      <h1>Update Template</h1>
+      {page === 0 ? (
+        <h1>Update Template</h1>
+      ) : (
+        page === 2 && <h1>Update Credits</h1>
+      )}
 
       <div className="updateTemplate__background">
         <div className="url__button" onClick={() => setShowInput(true)}>
@@ -95,46 +107,85 @@ function UpdateTemplate() {
         )
       )}
       <input type="file" ref={filePickerRef} hidden onChange={addImage} />
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
         <button
           onClick={() => {
-            if (filetype === "video/mp4") {
-              dispatch(
-                clickedTemplate({
-                  ...picture,
-                  video: videoUrl,
-                  img: null,
-                })
-              );
-              setShowPicture(false);
-              setUrl("");
-              setVideoUrl("");
-            } else {
-              dispatch(
-                clickedTemplate({
-                  ...picture,
-                  img: url,
-                  video: null,
-                })
-              );
-              setShowPicture(false);
-              setUrl("");
-              setVideoUrl("");
-            }
-          }}
+            if (page === 0) {
+              if (filetype === "video/mp4") {
+                dispatch(
+                  clickedTemplate({
+                    ...picture,
+                    video: videoUrl,
+                    img: null,
+                  })
+                );
+                setShowPicture(false);
+                setUrl("");
+                setVideoUrl("");
+              } else {
+                dispatch(
+                  clickedTemplate({
+                    ...picture,
+                    img: url,
+                    video: null,
+                  })
+                );
+                setShowPicture(false);
+                setUrl("");
+                setVideoUrl("");
+              }
+            } 
+            // else if (page === 2) {
+            //   if (filetype === "video/mp4") {
+            //     dispatch(
+            //       clickedLastTemplate({
+            //         ...picture,
+            //         video: videoUrl,
+            //         img: null,
+            //       })
+            //     );
+            //     setShowPicture(false);
+            //     setUrl("");
+            //     setVideoUrl("");
+            //   } else {
+            //     dispatch(
+            //       clickedLastTemplate({
+            //         ...picture,
+            //         img: url,
+            //         video: null,
+            //       })
+            //     );
+            //     setShowPicture(false);
+            //     setUrl("");
+            //     setVideoUrl("");
+            //   }
+            // }
+          }
+        }
         >
           Update background
         </button>
         <button
           onClick={() => {
-            dispatch(
-              clickedTemplate({
-                ...picture,
-                addImg: url,
-              })
-            );
-            setShowPicture(false);
-            setUrl("");
+            if (page === 0) {
+              dispatch(
+                clickedTemplate({
+                  ...picture,
+                  addImg: url,
+                })
+              );
+              setShowPicture(false);
+              setUrl("");
+            } else if (page === 2) {
+              dispatch(
+                clickedLastTemplate({
+                  ...picture,
+                  addImg: url,
+                })
+              );
+              setShowPicture(false);
+              setUrl("");
+            }
           }}
         >
           ADD IMAGE
@@ -148,13 +199,24 @@ function UpdateTemplate() {
       />
       <button
         onClick={() => {
-          dispatch(
-            clickedTemplate({
-              ...picture,
-              text_heading: heading2,
-            })
-          );
-          setHeading2("");
+          if(page === 0 ) {
+            dispatch(
+              clickedTemplate({
+                ...picture,
+                text_heading: heading2,
+              })
+            );
+            setHeading2("");
+          } else if (page === 2) {
+            dispatch(
+              clickedLastTemplate({
+                ...picture,
+                text_heading: heading2,
+              })
+            );
+            setHeading2("");
+          }
+         
         }}
       >
         Update SubHeading
@@ -167,13 +229,23 @@ function UpdateTemplate() {
       />
       <button
         onClick={() => {
-          dispatch(
-            clickedTemplate({
-              ...picture,
-              text_cta: heading1,
-            })
-          );
-          setHeading1("");
+          if(page === 0) {
+            dispatch(
+              clickedTemplate({
+                ...picture,
+                text_cta: heading1,
+              })
+            );
+            setHeading1("");
+          } else if (page === 2) {
+            dispatch(
+              clickedLastTemplate({
+                ...picture,
+                text_cta: heading1,
+              })
+            );
+            setHeading1("");
+          }
         }}
       >
         Update Heading

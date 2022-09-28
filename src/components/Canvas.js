@@ -20,20 +20,6 @@ function Canvas({}) {
   //   const page = useSelector(selectPage)
   return (
     <div className="canvas">
-      {/* <div className="canvas__image">
-        {picture?.img && (
-          <div className="canvas__headings">
-            <div className="headings">
-              <h1>{picture?.text_cta}</h1>
-              <div className="heading2">
-                <h2>{picture?.text_heading}</h2>
-              </div>
-            </div>
-          </div>
-        )}
-        <img src={picture?.img} alt="" />
-      </div> */}
-
       {picture && page === 0 && (
         <div className="canvas__image">
           <Template
@@ -52,6 +38,10 @@ function Canvas({}) {
           <Template
             id={lastTemplate?.id}
             img={lastTemplate?.img}
+            video={lastTemplate?.video}
+            text_heading={lastTemplate?.text_heading}
+            text_cta={lastTemplate?.text_cta}
+            addImg={lastTemplate?.addImg}
             style={{ height: "700px", width: "400px" }}
           />
         </div>

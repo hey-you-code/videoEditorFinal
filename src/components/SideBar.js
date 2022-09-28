@@ -5,7 +5,9 @@ import AudiotrackIcon from "@mui/icons-material/Audiotrack";
 import Template from "./Template";
 import templates from "./Templates";
 import {
+  loadedLastTemplate,
   loadedTemplate,
+  loadLastTemplateMore,
   loadMore,
   selectPage,
   setSelectedFile,
@@ -19,6 +21,8 @@ import { fetchAudios } from "../Store/audios";
 import { fetchImages } from "../Store/images";
 import AudioWaveform from "./AudioWaveform";
 import AddIcon from "@mui/icons-material/Add";
+import AutoAwesomeMosaicIcon from "@mui/icons-material/AutoAwesomeMosaic";
+import DashboardIcon from "@mui/icons-material/Dashboard";
 import Chip from "@mui/material/Chip";
 
 function SideBar({
@@ -28,6 +32,8 @@ function SideBar({
   setIsAudioIconClicked,
   isBrowseIconClicked,
   setIsBrowseIconClicked,
+  isCreditIconClicked,
+  setIsCreditIconClicked,
   templates_list,
   fetchTemplates,
   audio_list,
@@ -39,6 +45,7 @@ function SideBar({
   const dispatch = useDispatch();
   const loadTemplates = useSelector(loadedTemplate);
   const [label, setLabel] = useState("");
+  const loadLastTemplates = useSelector(loadedLastTemplate);
 
   console.log("stylesss", label);
 
@@ -60,7 +67,7 @@ function SideBar({
   }, [templates_list, audio_list, image_list]);
 
   const currentSideBar = () => {
-    if (page == 0 || page === 2) {
+    if (page == 0) {
       return (
         <>
           {isClicked && (
@@ -121,6 +128,52 @@ function SideBar({
           )}
         </>
       );
+    } else if (page === 2) {
+      return (
+        <>
+          {isCreditIconClicked && (
+            <div className="sideBar__right">
+              {templates_list
+                .slice(0, loadLastTemplates)
+                .map((template, index) => (
+                  <Template
+                    key={index}
+                    img={template.params?.background_media?.src}
+                    id={template.id}
+                    text_cta={template.params?.text_cta?.text}
+                    text_heading={template.params?.text_heading?.text}
+                    style={{ height: "200px", width: "150px" }}
+                  />
+                ))}
+              <div
+                style={{
+                  position: "fixed",
+                  bottom: "20px",
+
+                  padding: " 12px 20px",
+                  margin: "auto",
+                  width: "18vw",
+                  // background: "white",
+                  display: "flex",
+                  justifyContent: "center",
+                  zIndex: "10",
+                }}
+              >
+                <button
+                  style={{
+                    width: "100%",
+                    marginRight: "3px",
+                    borderRadius: "20px",
+                  }}
+                  onClick={() => dispatch(loadLastTemplateMore())}
+                >
+                  Load More
+                </button>
+              </div>
+            </div>
+          )}
+        </>
+      );
     } else if (page === 1) {
       return (
         <>
@@ -144,7 +197,7 @@ function SideBar({
                 type="text"
                 value={label}
               /> */}
-              
+
               <div
                 className="chip"
                 style={{
@@ -152,23 +205,20 @@ function SideBar({
                   color: "white",
                   overflow: "scroll",
                   padding: "20px",
-                  
                 }}
               >
                 {fashionStyles?.map((item, index) => (
-                  <div style={{ marginRight: "5px"}} key={index}>
-                  <Chip
-                    label={item}
-                    // key={index}
-                    // variant="filled"
-                    color="primary"
-                    size="medium"
-                    onClick={() => setLabel(item)}
-                  />
+                  <div style={{ marginRight: "5px" }} key={index}>
+                    <Chip
+                      label={item}
+                      // key={index}
+                      // variant="filled"
+                      color="primary"
+                      size="medium"
+                      onClick={() => setLabel(item)}
+                    />
                   </div>
                 ))}
-
-
               </div>
               {label.length != 0 && (
                 <Chip
@@ -210,17 +260,17 @@ function SideBar({
         <div
           onClick={() => {
             isClicked ? setIsClicked(false) : setIsClicked(true);
-            if (page != 2) {
-              dispatch(MoveToPage(0));
-            }
+
+            dispatch(MoveToPage(0));
 
             setIsAudioIconClicked(false);
             setIsBrowseIconClicked(false);
+            setIsCreditIconClicked(false);
           }}
           className={`sideBar__icons ${isClicked && "sideBar__clickedIcon"}`}
         >
-          <GridViewIcon fontSize="large" />
-          <h2>Templates</h2>
+          <DashboardIcon fontSize="large" />
+          <h2>CTA</h2>
         </div>
         <div
           onClick={() => {
@@ -230,13 +280,33 @@ function SideBar({
             dispatch(MoveToPage(1));
             setIsAudioIconClicked(false);
             setIsClicked(false);
+            setIsCreditIconClicked(false);
           }}
           className={`sideBar__icons ${
             isBrowseIconClicked && "sideBar__clickedIcon"
           }`}
         >
           <AddIcon fontSize="large" />
-          <h2>Browse</h2>
+          <h2>Media</h2>
+        </div>
+        <div
+          onClick={() => {
+            isCreditIconClicked
+              ? setIsCreditIconClicked(false)
+              : setIsCreditIconClicked(true);
+
+            dispatch(MoveToPage(2));
+
+            setIsClicked(false);
+            setIsAudioIconClicked(false);
+            setIsBrowseIconClicked(false);
+          }}
+          className={`sideBar__icons ${
+            isCreditIconClicked && "sideBar__clickedIcon"
+          }`}
+        >
+          <AutoAwesomeMosaicIcon fontSize="large" />
+          <h2>Credits</h2>
         </div>
         <div
           onClick={() => {
@@ -246,6 +316,7 @@ function SideBar({
             dispatch(MoveToPage(3));
             setIsClicked(false);
             setIsBrowseIconClicked(false);
+            setIsCreditIconClicked(false);
           }}
           className={`sideBar__icons ${
             isAudioIconClicked && "sideBar__clickedIcon"
